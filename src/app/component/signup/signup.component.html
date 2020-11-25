@@ -1,45 +1,102 @@
 <div class="card mx-auto my-2">
     <div class="card-body ">
         <h4 class="card-title font-weight-bolder text-center">Registration</h4>
-        <form action="#" class="needs-validation">
+        <form action="#" class="needs-validation" [formGroup]="singUpForm" (ngSubmit)="userRegistration()">
             <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" class="form-control" maxlength="80" required>
+                <input type="text" class="form-control" maxlength="80" required formControlName="name">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="">Last name</label>
-                <input type="text" class="form-control" maxlength="80" required>
+                <input type="text" class="form-control" maxlength="80" required formControlName="lastName">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="">Gender</label>
-                <input type="text" class="form-control" required>
+                <h6>Genero</h6>
+        
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="male" name="gender" class="custom-control-input" value="male" formControlName="gender">
+                    <label class="custom-control-label" for="male">Male</label>
+                </div>
+        
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="female" name="gender" class="custom-control-input" value="female" formControlName="gender">
+                    <label class="custom-control-label" for="female">Female</label>
+                </div>
+        
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="other" name="gender" class="custom-control-input" value="other" formControlName="gender">
+                    <label class="custom-control-label" for="other">Other</label>
+                </div>
             </div>
+        
 
             <div class="form-group">
                 <label for="">User name</label>
-                <input type="text" class="form-control" maxlength="20" required>
+                <input type="text" class="form-control" maxlength="20" required formControlName="userName">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="">Phone</label>
-                <input type="tel" class="form-control" maxlength="13" required>
+                <input type="tel" class="form-control" maxlength="13" required formControlName="phone">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" class="form-control" maxlength="180" required>
+                <input type="email" class="form-control" maxlength="180" required formControlName="email">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="">Date of Birth</label>
-                <input type="date" class="form-control" required>
+                <input type="date" class="form-control" required formControlName="dateOfBirth">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="">Password</label>
-                <input type="password" class="form-control" minlength="6" required>
+                <input type="password" class="form-control" minlength="6" required formControlName="password">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
             </div>
 
 

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { LayoutModule } from './layout/layout.module'
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +13,7 @@ import { SignupComponent } from './component/signup/signup.component';
 import { HomeComponent } from './component/home/home.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 import { SettingsComponent } from './component/settings/settings.component';
-import { from } from 'rxjs';
+
 
 
 @NgModule({
@@ -32,7 +33,9 @@ import { from } from 'rxjs';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     LayoutModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
