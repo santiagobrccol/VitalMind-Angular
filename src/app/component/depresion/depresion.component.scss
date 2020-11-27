@@ -1,0 +1,95 @@
+.fondobosque {
+  background-image: url("../../../assets/img/forest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  height: 400px;
+  text-align: center;
+  float: left;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: auto;
+  border-style: ridge;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f3f6be;
+  margin-block-end: auto;
+  overflow: hidden;
+  padding: 52px;
+  border-style: ridge;
+}
+.tituloDesarrollo {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.slogan {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.parrafos {
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: justify;
+  color: rgb(27, 25, 25);
+}
+
+.imgPlaylist {
+  float: left;
+  height: 490px;
+  width: 100vh;
+  margin: -10px;
+}
+.imganimacion {
+  display: contents;
+  float: left;
+  height: 490px;
+  width: 100vh;
+  margin-right: 20px;
+  border-style: ridge;
+}
+
+.imgchat {
+  float: left;
+  height: 490px;
+  width: 100vh;
+  margin: 20px;
+}
+.contenedor2 {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f3f6be;
+  margin-block-end: auto;
+  overflow: hidden;
+  padding: 52px;
+
+  border-style: ridge;
+}
+.subtitulo {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.parrafos2 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: justify;
+}
+/* Codigo santiago */
+.text-font {
+  font-family: Comic Sans MS;
+}

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { UserService} from '../../services/user.service';
+import {Router } from '@angular/router'
+
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -10,6 +13,7 @@ export class SignupComponent implements OnInit {
   singUpForm: FormGroup;
 
   constructor(
+    private router: Router,
     private formBuilder: FormBuilder,
     private userService: UserService
     ) {
@@ -29,10 +33,13 @@ export class SignupComponent implements OnInit {
   }
 
   userRegistration () {
+    console.log('user registration')
     if ( this.singUpForm.valid) {
+      console.log('valid')
       this.userService.registerUser(this.singUpForm.value)
       .subscribe((response) => {
-        console.log('Succsess', response)
+        //console.log('Success', response)
+        this.router.navigate(['/questionnaire'])
       },
         (error) => {
           console.error('error', error)

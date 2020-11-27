@@ -1,0 +1,49 @@
+.background-nav{
+    background-color: #3e978b;
+    
+}
+
+.carousel-item{
+    height: 400px;
+    text-align: center;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: auto;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+
+.nav-link disabled{
+    color: rgb(255, 255, 255);
+}
+.navbar-brand{
+    color: rgb(255, 255, 255)
+}
+.titulosPagina{
+    color: rgba(5, 5, 5, 0.849)
+}
+.textoPag{
+    padding: 60px;
+    margin: 20px;
+}
+
+.mediaarbol{
+    width: 400px;
+    
+    position: relative;
+    
+}
+
+
+.fondobosque {
+    background-image: url("../../../assets/img/forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

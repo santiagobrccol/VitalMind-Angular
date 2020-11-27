@@ -12,7 +12,9 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { HomeComponent } from './component/home/home.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-import { SettingsComponent } from './component/settings/settings.component';
+import { QuestionnaireComponent } from './component/questionnaire/questionnaire.component';
+import { TreeComponent } from './component/tree/tree.component';
+import { ChatComponent } from './component/chat/chat.component';
 
 
 
@@ -26,7 +28,9 @@ import { SettingsComponent } from './component/settings/settings.component';
     SignupComponent,
     HomeComponent,
     PageNotFoundComponent,
-    SettingsComponent,
+    QuestionnaireComponent,
+    TreeComponent,
+    ChatComponent,
     
   ],
   imports: [

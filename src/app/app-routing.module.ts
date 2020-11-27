@@ -6,7 +6,7 @@ import { HomeComponent } from './component/home/home.component';
 import { IraComponent } from './component/ira/ira.component';
 import { LoginComponent } from './component/login/login.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-import { SettingsComponent } from './component/settings/settings.component';
+import { QuestionnaireComponent } from './component/questionnaire/questionnaire.component';
 import { SignupComponent } from './component/signup/signup.component';
 
 const routes: Routes = [
@@ -42,8 +42,8 @@ const routes: Routes = [
     
   },
   {
-    path: 'settings',
-    component: SettingsComponent
+    path: 'questionnaire',
+    component: QuestionnaireComponent
   },
   {
     path: '**',

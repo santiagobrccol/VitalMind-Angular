@@ -1,0 +1,67 @@
+
+.fondobosque {
+    background-image: url("../../../assets/img/forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-item{
+    height: 400px;
+    text-align: center;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: auto;
+}
+
+/**.container-bg{
+    
+}*/
+
+.container-margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container-pading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-font{
+    font-family: Comic Sans MS;
+    
+}
+.register-text{
+    font-family: Comic Sans MS;
+    text-decoration: none;
+    
+}
+
+.material-icons.icons-size{
+    font-size: 50px;
+    
+}
+.btn-margin{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.succes-img{
+    width: 320px;
+    height: 160px;
+}
+
+.playlist{
+    margin-top: 15px;
+}
+
+
+.material-icons.navbar-icons{
+    font-size: 35px;
+    color: whitesmoke;
+}
