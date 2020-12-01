@@ -1,1 +1,36 @@
-<p>login works!</p>
+<div class="card mx-auto shadow my-4">
+    <div class="card-body ">
+        <h4 class="card-title font-weight-bolder text-center">Login</h4>
+        <form action="#" class="needs-validation">
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" class="form-control" maxlength="180" required formControlName="email">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" minlength="6" required formControlName="password">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    It seems that you are missing something
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
