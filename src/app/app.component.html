@@ -1,6 +1,13 @@
-<app-navbar></app-navbar>
+<div (click)= "barraProgreso()">
+    <app-navbar></app-navbar>
+
+    <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" [attr.aria-valuenow]="progreso" aria-valuemin="0" aria-valuemax="100" [style]= "'width: ' + progreso + '%;'"></div>
+    </div>
 
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
+
+</div>
 

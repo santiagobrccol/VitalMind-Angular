@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vitalmind-Angular';
+  progreso = 0;
+
+  barraProgreso(){
+    this.progreso++
+  }
 }

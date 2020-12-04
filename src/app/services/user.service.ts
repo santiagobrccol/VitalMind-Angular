@@ -11,6 +11,8 @@ export class UserService {
 
   registerUser (data = {}) {
     console.log('working')
-    return this.http.post('http://localhost:3000/user', data)
+    return this.http.post('https://vitalmind.herokuapp.com/user', data)
   }
+
+  
 }
