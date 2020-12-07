@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,13 @@ export class AppComponent {
   title = 'vitalmind-Angular';
   progreso = 0;
 
+  
   barraProgreso(){
-    this.progreso++
+    this.progreso +=50
+
+
+
+    if (this.progreso>=100){swal("subiste de nivel","💪","success"); this.progreso=0}
   }
 }
+
