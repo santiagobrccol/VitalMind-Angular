@@ -12,7 +12,7 @@ export class AppComponent {
 
   
   barraProgreso(){
-    this.progreso +=50
+    this.progreso +=1
 
 
 
