@@ -63,7 +63,7 @@ export class QuestionnaireComponent implements OnInit {
     this.serviceQuestionnaire.sendQuestionnaire( survey.data )
     .subscribe(
       (response) => {
-        console.log('repsonse', response)
+        
         alert("The results are:" + JSON.stringify(survey.data));
       
 

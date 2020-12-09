@@ -7,7 +7,7 @@ import { TokenJwt } from '../interfaces/token-jwt'
   providedIn: 'root'
 })
 export class AuthenticationService {
-  BASE_URL = `${environment.API_URL}/users/authentication`
+  BASE_URL = `${environment.API_URL}/user/authentication`
 
   constructor(private http: HttpClient) { }
 
