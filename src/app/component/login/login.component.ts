@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import swal from 'sweetalert'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,9 @@ import swal from 'sweetalert'
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private authenticationService: AuthenticationService) {
+  constructor(private formBuilder: FormBuilder, 
+    private authenticationService: AuthenticationService,
+    private router: Router) {
     this.loginForm = this.formBuilder.group({
 
       email: ['', Validators.required],
@@ -25,8 +28,8 @@ export class LoginComponent implements OnInit {
 
     this.authenticationService.authenticate(this.loginForm.value).subscribe((response: any ) => {
       this.authenticationService.saveToken(response.jwt);
-      
-      swal('Succes', 'Has ingresado con exito', 'succses' )
+      swal('Success', 'Has ingresado con exito', 'success' )
+      this.router.navigate(['/home'])
 
     }, (error) => {
       console.error('Error de autenticación', error)

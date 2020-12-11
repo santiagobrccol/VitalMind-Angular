@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
 import { QuestionnaireComponent } from './component/questionnaire/questionnaire.component';
 import { TreeComponent } from './component/tree/tree.component';
 import { ChatComponent } from './component/chat/chat.component';
+import { LevelComponent } from './component/level/level.component';
 
 
 
@@ -31,6 +32,7 @@ import { ChatComponent } from './component/chat/chat.component';
     QuestionnaireComponent,
     TreeComponent,
     ChatComponent,
+    LevelComponent,
     
   ],
   imports: [
