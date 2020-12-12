@@ -8,6 +8,6 @@ export class QuestionnaireService {
   constructor(private http: HttpClient) { }
 
   sendQuestionnaire(data){
-    return this.http.post('https://vitalmind.herokuapp.com/answer', data )
+    return this.http.post('http://vitalmind.herokuapp.com/questionnaire', data )
   }
 }
