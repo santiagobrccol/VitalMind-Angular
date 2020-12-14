@@ -59,9 +59,8 @@ export class QuestionnaireComponent implements OnInit {
       .subscribe(
         (response) => {
 
-          alert("The results are:" + JSON.stringify(survey.data));
-
-
+          this.calcularPuntaje(survey.data)   
+        
         },
         (error) => {
           console.log('error', error)
@@ -69,6 +68,40 @@ export class QuestionnaireComponent implements OnInit {
       )
 
   }
+  calcularPuntaje(questionnaire = {}) {  
+    let puntaje = 0;
+    // let encuesta = {question1: "si", question2: "no", question3: "aveces", question4: "si", question5: "no"}
+
+    let preguntas = Object.keys(questionnaire)
+
+    preguntas.forEach((question) => {
+      if (questionnaire[question] === 'si') {
+        puntaje += 5;
+      } else if (questionnaire[question] === 'no') {
+        puntaje += 0;
+      } else { // Cuando la respuesta sea 'aveces'
+        puntaje += 3;
+      }
+    })
+
+    // 40 o mas => Entonces tiene muchos problemas
+    // 25 o mas => Entonces tiene los problemas normales
+    // 24 o menos => Esta super bien
+
+    if (puntaje >= 40) {
+      console.log('Tienes muchos problemas :S');
+      alert('Tienes muchos problemas :S');
+    } else if (puntaje >= 25 && puntaje < 40) {
+      console.log('Tienes los problemas normales de todos :S');
+      alert('Tienes los problemas normales de todos :S');
+   
+    } else {
+      console.log('Esta super bien 🥳')
+      alert('Esta super bien 🥳')
+    }
+
+  }
+
 
 }
 
